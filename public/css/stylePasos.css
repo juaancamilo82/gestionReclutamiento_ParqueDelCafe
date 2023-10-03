@@ -1,0 +1,148 @@
+/* Estilos para la barra superior */
+.top-bar {
+    background-color: white; /* Color de fondo de la barra blanca */
+    height: 50px; /* Altura de la barra blanca  */
+    width: 100%; /* Ancho completo de la página */
+    position: fixed; /* Fijar la barra en la parte superior */
+    z-index: 10; /* Asegura que la barra esté encima del fondo */
+    top: 0; /* Alineación en la parte superior */
+    left: 0; /* Alineación en la parte izquierda */
+}
+
+/* Estilos para el contenedor del logotipo */
+.logo-container {
+    text-align: center;
+}
+
+/* Estilos para el logotipo */
+.logo {
+    max-width: 160px; /* Ajusta el tamaño máximo del logotipo según tus preferencias */
+    margin-top: 10px; /* Espaciado superior del logotipo */
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.general-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    width: 60%; /* Ancho del contenedor del formulario */
+    max-width: 600px; /* Ancho máximo del formulario para hacerlo más amplio */
+    margin: auto; /* Centrar horizontalmente */
+    position: absolute; /* Cambiar a posición absoluta */
+    top: 10%; /* Ajusta la distancia superior */
+    bottom: 10%; /* Ajusta la distancia inferior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%); /* Centrar completamente */
+    overflow: auto; /* Agrega scroll si el contenido desborda el contenedor */
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada */
+.form-control {
+    width: 100%;
+}
+
+/* Estilos para el botón de guardar */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el botón guardar y continuar */
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Espaciado superior del botón */
+}
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 10px 0; /* Espaciado vertical entre los campos */
+}
+.form-group select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 10px 0; /* Espaciado vertical entre los campos */
+}
+/* Estilos para la línea de tiempo */
+.timeline {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    padding: 20px 0; /* Espacio vertical alrededor de la línea de tiempo */
+    background-color: rgba(240, 240, 240, 0); /* Color de fondo de la línea de tiempo */
+    border-radius: 8px;
+}
+
+.step {
+    text-align: left;
+    position: relative;
+    margin: 0 20px; /* Aumenta el espacio horizontal entre los pasos */
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #656d7b; /* Color del punto */
+    border-radius: 50%;
+    margin: auto 0px; /* Aumenta el espacio vertical entre los puntos y el texto */
+    position: relative;
+    z-index: 1;
+}
+
+.label {
+    font-size: 14px; /* Aumenta el tamaño del texto debajo de los puntos */
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px; /* Aumenta el espacio vertical entre el punto y el texto */
+}
+
+/* Estilos para las líneas */
+.step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 2px;
+    background-color: #656d7b; /* Color de la línea */
+    top: calc(-24% + 22px); /* Aumenta el espacio vertical entre la línea y el punto */
+    left: 88%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+form div.form-group h1 {
+    text-align: center; /* Centra horizontalmente el encabezado "Información" */
+}
+
+/* Estilos para resaltar el punto deseado (numero)*/
+.timeline .step:nth-child(1) .dot {
+    background-color: #006fff;
+}
+/* Estilos para cambiar el color de la línea que conecta al punto (numero) */
+.timeline .step:nth-child(1)::after {
+    background-color: #006fff;
+}
