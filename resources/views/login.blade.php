@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión </title>
-    <link rel="stylesheet" href="../css/app.css">
-</head>
+@extends('layout')
+@section('title', 'Registro')
+@section('content')
 <body>
-<div class="top-bar">
-    <div class="logo-container">
-        <!-- Logotipo -->
-        <img src="../images/logoParque.png" alt="Logo" class="logo">
-    </div>
-</div>
 <div class="background-image">
-    <div class="login-container">
+    <div class="general-container">
         <form class="login-form" method="POST" action="{{ route('login') }}">
             <h2>Iniciar Sesión</h2>
             <div class="form-group">
@@ -30,12 +19,12 @@
             </div>
 
             <p>¿Aún no tienes una cuenta? <a href="{{ route('register') }}">Crear una cuenta</a></p>
-            <p><a href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a></p>
+            <p><a href="">¿Olvidaste tu contraseña?</a></p>
         </form>
     </div>
 </div>
 </body>
 </html>
 
-
+@endsection
 

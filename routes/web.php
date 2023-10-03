@@ -2,16 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Rutas para mostrar las páginas de inicio de sesión y registro
 Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+Route::get('/register', function () {
+    return view('register');
+})->name('register');
+Route::get('/personalInformation', function () {
+    return view('personalInformation');
+})->name('personalInformation');
 
-Route::view('/', 'login');
+// Ruta para mostrar la vista de inicio
+Route::view('/', 'login')->name('login');
 
-// Ruta para mostrar la página de inicio de sesión
-Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 
-// Ruta para mostrar la página de registro
-Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
 
