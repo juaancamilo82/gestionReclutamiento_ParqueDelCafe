@@ -1,0 +1,128 @@
+
+/* Estilos para resaltar el punto deseado (numero)*/
+.timeline .step:nth-child(1) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(2) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(3) .dot {
+    background-color: #006fff;
+}
+/* Estilos para cambiar el color de la línea que conecta al punto (numero) */
+.timeline .step:nth-child(1)::after {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(2)::after {
+    background-color: #006fff;
+}
+.divider {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de experiencia profesional */
+.form-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#add-form-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#add-form-btn:hover {
+    background-color: #0056b3;
+}
+
+.divider {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.float-left {
+    float: left;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.float-left:hover {
+    background-color: #999;
+}
+
+.float-right {
+    float: right;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.float-right:hover {
+    background-color: #0056b3;
+}
+/* Estilo para el botón de eliminar */
+button.delete-button {
+    background-color: #ff0000; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    border: none; /* Quita el borde */
+    padding: 5px 10px; /* Añade relleno al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 3px; /* Agrega esquinas redondeadas */
+}
+
+/* Estilo para el botón de eliminar al pasar el mouse */
+button.delete-button:hover {
+    background-color: #cc0000; /* Cambia el color de fondo cuando se pasa el mouse */
+}
+/* Estilo para el contenedor de los botones */
+.custom-form-group {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al lado derecho */
+}
+/* Estilo para los botones */
+.custom-form-group button {
+    margin-left: 1px; /* Agrega un espacio entre los botones */
+    padding: 10px 20px;
+    background-color: #006fff;
+    color: #ffffff; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}

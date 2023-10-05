@@ -63,7 +63,7 @@
 
 /* Estilos para el botón guardar y continuar */
 .form-group button {
-    width: 100%;
+    width: 28%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -92,9 +92,9 @@
 /* Estilos para la línea de tiempo */
 .timeline {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: start;
-    padding: 20px 0; /* Espacio vertical alrededor de la línea de tiempo */
+    padding: 1px 0; /* Espacio vertical alrededor de la línea de tiempo */
     background-color: rgba(240, 240, 240, 0); /* Color de fondo de la línea de tiempo */
     border-radius: 8px;
 }
@@ -116,10 +116,12 @@
 }
 
 .label {
-    font-size: 14px; /* Aumenta el tamaño del texto debajo de los puntos */
+    font-size: 15px; /* Aumenta el tamaño del texto debajo de los puntos */
     font-weight: bold;
     color: #333;
-    margin-top: 10px; /* Aumenta el espacio vertical entre el punto y el texto */
+    margin-top: 13px; /* Aumenta el espacio vertical entre el punto y el texto */
+    position: relative;
+
 }
 
 /* Estilos para las líneas */
@@ -130,7 +132,7 @@
     height: 2px;
     background-color: #656d7b; /* Color de la línea */
     top: calc(-24% + 22px); /* Aumenta el espacio vertical entre la línea y el punto */
-    left: 88%;
+    left: 85%;
     transform: translateX(-50%);
     z-index: 0;
 }
@@ -138,11 +140,4 @@ form div.form-group h1 {
     text-align: center; /* Centra horizontalmente el encabezado "Información" */
 }
 
-/* Estilos para resaltar el punto deseado (numero)*/
-.timeline .step:nth-child(1) .dot {
-    background-color: #006fff;
-}
-/* Estilos para cambiar el color de la línea que conecta al punto (numero) */
-.timeline .step:nth-child(1)::after {
-    background-color: #006fff;
-}
+

@@ -20,21 +20,6 @@
     margin-top: 10px; /* Espaciado superior del logotipo */
 }
 
-/* Estilos para el fondo de la página */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('../images/fondo.jpg');
-    background-size: cover; /* La imagen se ajustará para cubrir toda la pantalla sin pixelarse */
-    background-repeat: no-repeat;
-    background-position: center center; /* Centra la imagen en la pantalla */
-    height: 100vh; /* Establece la altura al 100% del viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Estilos para el formulario de inicio de sesión */
 .login-container {
     background-color: rgba(255, 255, 255, 0.9);
@@ -120,3 +105,18 @@ body {
 
 }
 
+/* Estilos para el formulario de registro */
+.general-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%; /* Ancho del contenedor del formulario */
+    max-width: 400px; /* Ancho máximo del formulario para hacerlo más amplio */
+    margin: auto; /* Centrar horizontalmente */
+    position: absolute; /* Cambiar a posición absoluta */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar completamente */
+}

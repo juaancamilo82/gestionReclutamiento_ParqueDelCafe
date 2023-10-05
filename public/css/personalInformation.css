@@ -1,0 +1,21 @@
+/* Estilos para las líneas */
+.step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 2px;
+    background-color: #656d7b; /* Color de la línea */
+    top: calc(-24% + 22px); /* Aumenta el espacio vertical entre la línea y el punto */
+    left: 85%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+form div.form-group h1 {
+    text-align: center; /* Centra horizontalmente el encabezado "Información" */
+}
+
+/* Estilos para resaltar el punto deseado (numero)*/
+.timeline .step:nth-child(1) .dot {
+    background-color: #006fff;
+}
+
