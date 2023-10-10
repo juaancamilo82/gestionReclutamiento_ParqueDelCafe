@@ -1,0 +1,68 @@
+/* Estilos para resaltar el punto deseado (numero)*/
+.timeline .step:nth-child(1) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(2) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(3) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(4) .dot {
+    background-color: #006fff;
+}
+/* Estilos para cambiar el color de la línea que conecta al punto (numero) */
+.timeline .step:nth-child(1)::after {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(2)::after {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(3)::after {
+    background-color: #006fff;
+}
+.divider {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Estilo para el contenedor de los botones */
+.custom-form-group {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al lado derecho */
+}
+/* Estilo para los botones */
+.custom-form-group button {
+    margin-left: 10px; /* Agrega un espacio entre los botones */
+    padding: 10px 20px;
+    background-color: #006fff;
+    color: #ffffff; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+/* Estilo para el contenedor del campo de entrada */
+.form-group {
+    margin-bottom: 20px; /* Espacio entre elementos */
+}
+
+/* Estilo para la etiqueta del campo */
+.form-group label {
+    display: block; /* Coloca la etiqueta en una nueva línea */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+}
+
+/* Estilo para el campo de entrada de texto */
+#horas-disponibles {
+    width: 86%; /* Ancho completo del contenedor */
+    padding: 10px; /* Relleno interno para mejorar la apariencia */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.float-left:hover {
+    background-color: #0056b3;
+}
+.float-right:hover {
+    background-color: #0056b3;
+}

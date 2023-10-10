@@ -1,28 +1,26 @@
 <?php
-
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PasosController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
-// Rutas para mostrar las páginas
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+// returns the home page with all posts
 
-Route::get('/register', function () {
-    return view('register');
-})->name('register');
 
-Route::get('/informacion', function () {
-    return view('informacion');
-})->name('informacion');
+Route::view('/', "login")->name('login');
+Route::view('/login', "login")->name('login');
+Route::view('/registro', "registro")->name('registro');
+Route::view('/informacion', "informacion")->middleware('auth')->name('informacion');
+Route::view('/conocimientos', "conocimientos")->name('conocimientos');
+Route::view('/experiencia', "experiencia")->name('experiencia');
+Route::view('/preguntas', "preguntas")->name('preguntas');
+Route::view('/documentacion', "documentacion")->name('documentacion');
+Route::view('/revision', "revision")->name('revision');
 
-Route::get('/conocimientos', function () {
-    return view('conocimientos');
-})->name('conocimientos');
 
-Route::get('/experiencia', function () {
-    return view('experiencia');
-})->name('experiencia');
+Route::post('/validar-registro',[LoginController::class,'register'])->name('validar-registro');
+Route::post('/iniciar-sesion',[LoginController::class,'login'])->name('iniciar-sesion');
+Route::get('/logout',[LoginController::class,'logout'])->name('logout');
+Route::get('/validar-informacion',[PasosController::class,'informacion'])->name('validar-informacion');
 
-// Ruta para mostrar la vista de inicio
-Route::view('/', 'login')->name('login');
 

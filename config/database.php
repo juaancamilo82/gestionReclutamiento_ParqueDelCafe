@@ -16,7 +16,9 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
-
+    'charset' => 'utf8mb4',
+    'collation' => 'utf8mb4_spanish_ci',
+    
     /*
     |--------------------------------------------------------------------------
     | Database Connections

@@ -1,7 +1,8 @@
 @extends('layoutPasos')
 @section('title', 'Información personal')
 @section('content')
-    <link rel="stylesheet" href="{{ asset('css/personalInformation.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/informacion.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/stylePasos.css') }}">
     <div class="background-image">
         <div class="general-container">
             <!-- Línea de tiempo -->
@@ -31,9 +32,10 @@
                     <div class="label">Revisión</div>
                 </div>
             </div>
-
-            <form action="" method="POST">
+            <!-- Fin linea del tiempo -->
+            <form action="{{ route('validar-informacion') }}" method="POST">
                 <div class="form-group">
+                <br><br>
                     <h1>Información </h1>
                     <h3> * Indica que un campo es obligatorio</h3>
                     <h2> Nombre Legal</h2>
@@ -118,9 +120,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <button type="button" onclick="location.href='{{ route('conocimientos') }}'">Guardar y
-                        continuar</button>
+                <div class="custom-form-group">
+                    <button type="button" onclick="location.href='{{ route('conocimientos') }}'" class="float-left">Guardar y continuar</button>
+                  
                 </div>
             </form>
         </div>

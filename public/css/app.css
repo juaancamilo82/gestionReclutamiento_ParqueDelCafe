@@ -1,7 +1,7 @@
 /* Estilos para la barra superior */
 .top-bar {
     background-color: white; /* Color de fondo de la barra blanca */
-    height: 50px; /* Altura de la barra blanca  */
+    height: 80px; /* Altura de la barra blanca  */
     width: 100%; /* Ancho completo de la página */
     position: fixed; /* Fijar la barra en la parte superior */
     z-index: 10; /* Asegura que la barra esté encima del fondo */
@@ -16,7 +16,7 @@
 
 /* Estilos para el logotipo */
 .logo {
-    max-width: 160px; /* Ajusta el tamaño máximo del logotipo según tus preferencias */
+    max-width: 250px; /* Ajusta el tamaño máximo del logotipo según tus preferencias */
     margin-top: 10px; /* Espaciado superior del logotipo */
 }
 

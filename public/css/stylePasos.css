@@ -1,7 +1,7 @@
 /* Estilos para la barra superior */
 .top-bar {
     background-color: white; /* Color de fondo de la barra blanca */
-    height: 50px; /* Altura de la barra blanca  */
+    height: 80px; /* Altura de la barra blanca  */
     width: 100%; /* Ancho completo de la página */
     position: fixed; /* Fijar la barra en la parte superior */
     z-index: 10; /* Asegura que la barra esté encima del fondo */
@@ -16,7 +16,7 @@
 
 /* Estilos para el logotipo */
 .logo {
-    max-width: 160px; /* Ajusta el tamaño máximo del logotipo según tus preferencias */
+    max-width: 250px; /* Ajusta el tamaño máximo del logotipo según tus preferencias */
     margin-top: 10px; /* Espaciado superior del logotipo */
 }
 
@@ -34,9 +34,11 @@
     top: 10%; /* Ajusta la distancia superior */
     bottom: 10%; /* Ajusta la distancia inferior */
     left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%); /* Centrar completamente */
+    transform: translate(-50%, 5%); /* Centrar completamente */
     overflow: auto; /* Agrega scroll si el contenido desborda el contenedor */
 }
+
+
 
 /* Estilos para el formulario */
 .form-group {
@@ -92,17 +94,16 @@
 /* Estilos para la línea de tiempo */
 .timeline {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Distribuye los pasos de manera uniforme */
     align-items: start;
-    padding: 1px 0; /* Espacio vertical alrededor de la línea de tiempo */
+    padding: -20px 0; /* Espacio vertical alrededor de la línea de tiempo */
     background-color: rgba(240, 240, 240, 0); /* Color de fondo de la línea de tiempo */
     border-radius: 8px;
-}
+}   
 
 .step {
     text-align: left;
     position: relative;
-    margin: 0 20px; /* Aumenta el espacio horizontal entre los pasos */
 }
 
 .dot {
@@ -110,7 +111,6 @@
     height: 20px;
     background-color: #656d7b; /* Color del punto */
     border-radius: 50%;
-    margin: auto 0px; /* Aumenta el espacio vertical entre los puntos y el texto */
     position: relative;
     z-index: 1;
 }
@@ -119,25 +119,20 @@
     font-size: 15px; /* Aumenta el tamaño del texto debajo de los puntos */
     font-weight: bold;
     color: #333;
-    margin-top: 13px; /* Aumenta el espacio vertical entre el punto y el texto */
-    position: relative;
-
+    margin-top: 5px; /* Aumenta el espacio vertical entre el punto y el texto */
+    position: fixed;
+    transform: translateX(-30%);
 }
 
 /* Estilos para las líneas */
 .step:not(:last-child)::after {
     content: "";
     position: absolute;
-    width: 150%;
+    width: 600%; /* Cambia el ancho al 100% para que la línea llegue al punto */
     height: 2px;
     background-color: #656d7b; /* Color de la línea */
-    top: calc(-24% + 22px); /* Aumenta el espacio vertical entre la línea y el punto */
-    left: 85%;
-    transform: translateX(-50%);
+    top: calc(-54% + 22px); /* Aumenta el espacio vertical entre la línea y el punto */
+    left: 10;
+    transform: translateX(10%);
     z-index: 0;
 }
-form div.form-group h1 {
-    text-align: center; /* Centra horizontalmente el encabezado "Información" */
-}
-
-

@@ -22,7 +22,7 @@
 /* Estilos para las etiquetas de fecha */
 .form-group label {
     font-size: 14px;
-    font-weight: bold;
+   
 }
 
 /* Estilos para el contenedor de los campos de fecha */
@@ -67,6 +67,10 @@ form div.form-group-1 h1 {
     margin-right: 10px; /* Espacio entre el texto y el botón de eliminar */
     font-weight: bold;
 }
+.skill-bubble {
+    margin-right: 10px; /* Espacio entre el texto y el botón de eliminar */
+    font-weight: bold;
+}
 
 /* Estilo para el botón de eliminar */
 .delete-language {
@@ -78,8 +82,20 @@ form div.form-group-1 h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+/* Estilo para el botón de eliminar */
+.delete-skill {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 .delete-language:hover {
+    background-color: #c0392b;
+}
+.delete-skill:hover {
     background-color: #c0392b;
 }
 /* Estilo para el cuadro de entrada de idioma */
@@ -115,38 +131,6 @@ form div.form-group-1 h1 {
 
 #add-language:hover {
     background-color: #0056b3;
-}
-/* skills */
-
-.skill-bubble {
-    margin-right: 10px; /* Espacio entre el texto y el botón de eliminar */
-    font-weight: bold;
-}
-
-/* Estilo para el botón de eliminar */
-.delete-skill {
-    background-color: #e74c3c;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.delete-skill:hover {
-    background-color: #c0392b;
-}
-/* Estilo para el cuadro de entrada de idioma */
-.skill-input {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 8px;
-    background-color: rgba(240, 240, 240, 0);
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 #skill {
@@ -187,4 +171,9 @@ form div.form-group-1 h1 {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
-
+.float-left:hover {
+    background-color: #0056b3;
+}
+.float-right:hover {
+    background-color: #0056b3;
+}
