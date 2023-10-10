@@ -25,7 +25,6 @@
 /* Estilos para el formulario de experiencia profesional */
 .form-container h2 {
     font-size: 24px;
-    font-weight: bold;
 }
 
 .form-group {
@@ -33,7 +32,7 @@
 }
 
 .form-group label {
-    font-weight: bold;
+
     display: block;
 }
 
@@ -82,7 +81,7 @@
 }
 
 .float-left:hover {
-    background-color: #999;
+    background-color: #0056b3;
 }
 
 .float-right {

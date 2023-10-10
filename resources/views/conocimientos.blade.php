@@ -36,6 +36,7 @@
             <!-- Contenedor de Conocimientos -->
             <form action="" method="POST">
                 <div class="form-group">
+                <br><br>
                     <h1>Conocimientos</h1>
                 </div>
                 <div class="form-group-1">

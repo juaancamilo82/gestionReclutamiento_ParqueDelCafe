@@ -36,6 +36,7 @@
             <!-- Contenedor de experiencia -->
             <form action="" method="POST">
                 <div class="form-group">
+                <br><br>
                     <h1>Experiencia</h1>
                 </div>
                 <div class="form-container">
@@ -71,7 +72,7 @@
 
                 <div class="custom-form-group">
                     <button type="button" onclick="location.href='{{ route('conocimientos') }}'" class="float-left">Volver</button>
-                    <button type="button" onclick="location.href='{{ route('experiencia') }}'" class="float-right">Guardar y continuar</button>
+                    <button type="button" onclick="location.href='{{ route('preguntas') }}'" class="float-right">Guardar y continuar</button>
                 </div>
         </div>
     </div>

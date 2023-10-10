@@ -1,0 +1,26 @@
+form div.form-group h1 {
+    text-align: center; /* Centra horizontalmente el encabezado "Información" */
+}
+
+/* Estilos para resaltar el punto deseado (numero)*/
+.timeline .step:nth-child(1) .dot {
+    background-color: #006fff;
+}
+
+/* Estilo para el contenedor de los botones */
+.custom-form-group {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al lado derecho */
+}
+/* Estilo para los botones */
+.custom-form-group button {
+    margin-left: 1px; /* Agrega un espacio entre los botones */
+    padding: 10px 20px;
+    background-color: #006fff;
+    color: #ffffff; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+.float-left:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,80 @@
+/* Estilos para resaltar el punto deseado (numero)*/
+.timeline .step:nth-child(1) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(2) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(3) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(4) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(5) .dot {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(6) .dot {
+    background-color: #006fff;
+}
+/* Estilos para cambiar el color de la línea que conecta al punto (numero) */
+.timeline .step:nth-child(1)::after {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(2)::after {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(3)::after {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(4)::after {
+    background-color: #006fff;
+}
+.timeline .step:nth-child(5)::after {
+    background-color: #006fff;
+}
+.divider {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Estilo para el contenedor de los botones */
+.custom-form-group {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al lado derecho */
+}
+/* Estilo para los botones */
+.custom-form-group button {
+    margin-left: 10px; /* Agrega un espacio entre los botones */
+    padding: 10px 20px;
+    background-color: #006fff;
+    color: #ffffff; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* ------- Diseños del cuerpo --- */ 
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+h2#nombreLegal {
+    color: rgb(0, 60, 255);
+    font-size: 20px;
+    text-align: left;
+}
+
+h2#direccion {
+    color: rgb(0, 60, 255);
+    font-size: 20px;
+    text-align: left;
+}
+h2#experienciaProfesional {
+    color: rgb(0, 60, 255);
+    font-size: 20px;
+    text-align: left;
+}
